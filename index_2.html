@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE.js</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <div id="app" v-bind:style="{background: '#'+color}">
+        <img v-bind:src="img" 
+             v-bind:alt="name" 
+             width="100px" 
+             v-on:mouseover="toggleShowPrices"
+             v-on:mouseout="toggleShowPrices">
+        <h1 v-bind:class="changePercent > 0 ? 'green' : 'red'">
+            {{ title }}
+            <span v-if="changePercent > 0">👍</span>
+            <span v-else-if="changePercent < 0">👎</span>
+            <span v-else>🤞</span>
+            
+            <!--
+            <span v-show="changePercent > 0">👍</span>
+            <span v-show="changePercent < 0">👎</span>
+            <span v-show="changePercent == 0">🤞</span>
+            -->
+        </h1>
+
+        <span v-on:click="toggleShowPrices">
+            {{showPrices ? '🐵' : '🙈'}}
+        </span>
+
+        <input type="text" v-model="value">
+        <span>{{ convertedValue }}</span>
+
+        <ul v-show="showPrices">
+            <li 
+                class="uppercase"
+                v-for="(p, index) in pricesDay" 
+                v-bind:key="p"
+                v-bind:class="{ blue: p.value === currentPrice, red: p.value < currentPrice, green: p.value > currentPrice }">
+                {{ index }} - {{ p.day + ' - ' + p.value }}
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script type="text/javascript" src="js/vue_2.js"></script>
+</body>
+</html>

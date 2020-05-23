@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE.js</title>
+    <style>
+        html {
+            padding: 20px;
+            color: #3d3d3d;
+        }
+
+        #app{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .red {
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ appTitle }}</h1>
+
+            <p>
+              <input type="text" placeholder="Titulo del curso" v-model="CursoTitulo" value="{{ CursoHoras }}"/>
+            </p>
+            <p>
+              <input type="number" placeholder="Horas" v-model="CursoHoras" value="{{ CursoHoras }}"/>
+            </p>
+            <p>
+              <button v-on:click='AgregarNuevoCurso'>Guardar Curso</button>
+            </p>
+          </fieldset>
+          <div>
+            <h3>Lista de Cursos</h3>
+            <p class="red" v-show="!mostrarListaCursos">Aun no has realizado cursos</p>
+            <div v-show="mostrarListaCursos">
+              <ol>
+                <!-- Lista de cursos -->
+                <li v-for="curso in cursosTomados">
+                  CURSO: <b>{{ curso.cursoTitulo }}</b> - HORAS: <b>{{ curso.CursoHoras }}</b>
+                </li>
+              </ol>
+            </div>
+            <hr/>
+              <p>
+                Llevo <strong>{{ totalTime }}</strong> horas aprendiendo en Platzi.
+                <b>#NuncaParesDeAprender 💚</b>
+              </p>
+          </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script type="text/javascript" src="js/tareVue.js"></script>
+</body>
+</html>
