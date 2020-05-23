@@ -11,24 +11,19 @@ Primer ejercicio práctico de forma individual.
 Creación y manejo de componentes de vue
 
 ```javascript
-Vue.component('contador', {
+Vue.component('Nombre del componentes', {
     data() {
         return {
-            counter: 0
+            Variables del componente    
         }
     },
 
     methods: {
-        Incrementar () {
-            this.counter += 1
-        }
+        Métodos del componente
     },
 
     template: `
-    <div>
-        <button v-on:click="Incrementar">Clickeame!</button>
-        <span>{{ counter }}</span>
-    </div>
+    Template del componente
     `
 })
 ```
