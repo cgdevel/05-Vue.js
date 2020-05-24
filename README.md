@@ -4,6 +4,8 @@ Ejercicios de VUE, del curso de Plazti
 ## index.html / index_2.html
 Introducción a la estructura de VUE.
 
+
+
 ## tareaVue.html
 Primer ejercicio práctico de forma individual.
 
@@ -12,18 +14,31 @@ Creación y manejo de componentes de vue
 
 ```javascript
 Vue.component('Nombre del componentes', {
+    /*
+    Parámetros que son modificales desde el componente padre.
+    Deben estar declarados dentro del componente padre.
+    Todos los componentes solo deben tener un componente padre
+    */
+    props: [],
+
+    /*
+    Variables del componente
+    */
     data() {
         return {
-            Variables del componente    
         }
     },
 
-    methods: {
-        Métodos del componente
+    /*
+    Métodos del componente
+    */
+    methods: {    
     },
 
-    template: `
+    /*
     Template del componente
+    */
+    template: `
     `
 })
 ```
