@@ -14,14 +14,26 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" v-bind:style="{background: '#'+color}">
         <h1>{{ appTitle }}</h1>
         <!-- <detalle-moneda 
             v-bind:coin-current-price="coinCurrentPrice"
             v-bind:coin-img="coinImg"
             v-bind:coin-title="coinTitle"
             v-bind:coin-change-percent="coinChangePercent"></detalle-moneda> -->
-            <detalle-moneda v-bind:coin="btc"></detalle-moneda>
+            <detalle-moneda 
+                v-on:change-color="updateColor"
+                v-bind:coin="btc"></detalle-moneda>
+
+            <detalle-moneda 
+                v-on:change-color="updateColor"
+                v-bind:coin="btc"></detalle-moneda>
+
+            <detalle-moneda 
+                v-on:change-color="updateColor"
+                v-bind:coin="btc"></detalle-moneda>
+
+                
         <contador></contador>
     </div>
     

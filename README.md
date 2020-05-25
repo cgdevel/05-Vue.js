@@ -12,6 +12,8 @@ Primer ejercicio práctico de forma individual.
 ## VueComponent
 Creación y manejo de componentes de vue
 
+OJO: La comunicación de PADRES hacia hijos se da a travez de propiedades (props) y de hijos hacia padres es a travez de eventos
+
 ```javascript
 Vue.component('Nombre del componentes', {
     /*
