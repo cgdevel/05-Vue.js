@@ -39,6 +39,12 @@ Vue.component('Nombre del componentes', {
 
     /*
     Template del componente
+
+    - <slot name="NombreSlot"></slot> / <template v-slor:NombreSlot>¨[Còdigo HTML]</template>
+        Es un componente que permite que el componente paddre pueda inyectar código HTML dentro del componente
+        Se puede tener más de un slot, diferenciandolor a traves del
+        parametro name. Y para usarlos, se usan dentro de la etiqueta
+        <template>
     */
     template: `
     `

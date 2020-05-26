@@ -1,15 +1,10 @@
 Vue.component('DetalleMoneda', {
-    // props: ['coinChangePercent',
-    //         'coinTitle',
-    //         'coinImg',
-    //         'coinName',
-    //         'coinCurrentPrice'],
     props: ['coin'],
 
     data() {
         return {
             showPrices: false,
-            coinValue: 0,
+            coinValue: 11000,
         }
     },
 
@@ -25,7 +20,7 @@ Vue.component('DetalleMoneda', {
                 return 0
             }
 
-            return this.Value / this.coin.CurrentPrice
+            return this.coinValue / this.coin.CurrentPrice
         }
     },
 
@@ -36,8 +31,6 @@ Vue.component('DetalleMoneda', {
             this.$emit('change-color',
                         this.showPrices ? 'FF96C8' : '3D3D3D')
         },
-
-
     },
 
     template: `
@@ -60,6 +53,9 @@ Vue.component('DetalleMoneda', {
 
         <input type="number" v-model="coinValue">
         <span>{{ coinConvertedValue }}</span>
+
+        <slot name="texto"></slot>
+        <slot name="link"></slot>
 
         <ul v-show="showPrices">
             <li 

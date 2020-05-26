@@ -21,22 +21,24 @@
             v-bind:coin-img="coinImg"
             v-bind:coin-title="coinTitle"
             v-bind:coin-change-percent="coinChangePercent"></detalle-moneda> -->
-            <detalle-moneda 
-                v-on:change-color="updateColor"
-                v-bind:coin="btc"></detalle-moneda>
+        <detalle-moneda 
+            v-on:change-color="updateColor" 
+            v-bind:coin="btc">
+            <template v-slot:texto>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eum consequuntur aperiam, officiis
+                    dolorem est, voluptas, sunt cupiditate aliquam pariatur maiores. Temporibus vel harum ullam dolores
+                    voluptas ad, eum quis.
+                </p>
+            </template>
+            <template v-slot:link>
+                <a href="#">SOY UN LINK</a>
+            </template>
+        </detalle-moneda>
 
-            <detalle-moneda 
-                v-on:change-color="updateColor"
-                v-bind:coin="btc"></detalle-moneda>
-
-            <detalle-moneda 
-                v-on:change-color="updateColor"
-                v-bind:coin="btc"></detalle-moneda>
-
-                
         <contador></contador>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <script type="text/javascript" src="js/vueComponent.js"></script>
 </body>
