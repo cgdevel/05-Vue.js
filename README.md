@@ -14,8 +14,12 @@ Creación y manejo de componentes de vue
 
 OJO: La comunicación de PADRES hacia hijos se da a travez de propiedades (props) y de hijos hacia padres es a travez de eventos
 
+### Ciclo de vida
+![Ciclo de vida de los componentes de VUE](https://vuejs.org/images/lifecycle.png)
+
+### Estructura de un componente de VUE
 ```javascript
-Vue.component('Nombre del componentes', {
+Vue.component('NombreDelComponente', {
     /*
     Parámetros que son modificales desde el componente padre.
     Deben estar declarados dentro del componente padre.
@@ -49,4 +53,11 @@ Vue.component('Nombre del componentes', {
     template: `
     `
 })
+```
+Uso dentro de la página. Lo que se mostrará es la información dentro de la sección TEMPLATE del componente
+```HTML
+<div>
+    <NombreDelComponente></NombreDelComponente>
+</div>
+
 ```

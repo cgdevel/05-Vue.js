@@ -24,12 +24,19 @@ Vue.component('DetalleMoneda', {
         }
     },
 
+    created() {
+        console.log('creado detalle...')
+    },
+
+    mounted() {
+        console.log('montado detalle...')
+    },
     methods: {
         toggleShowPrices() {
             this.showPrices = !this.showPrices
 
             this.$emit('change-color',
-                        this.showPrices ? 'FF96C8' : '3D3D3D')
+                this.showPrices ? 'FF96C8' : '3D3D3D')
         },
     },
 
@@ -97,7 +104,7 @@ new Vue({
     data() {
         return {
             appTitle: 'Ejemplo de componentes de VUE',
-            color:'f4f4f4',
+            color: 'f4f4f4',
             btc: {
                 Name: 'Bitcoin',
                 Symbol: 'BTC',
@@ -117,8 +124,16 @@ new Vue({
         }
     },
 
+    created() {
+        console.log('creado...')
+    },
+
+    mounted() {
+        console.log('montado...')
+    },
+
     methods: {
-        updateColor (color) {
+        updateColor(color) {
             this.color = color || this.color.split('').reverse().join('')
         }
     }
