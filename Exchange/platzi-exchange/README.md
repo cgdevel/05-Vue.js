@@ -59,3 +59,22 @@ Es un framework que nos permite generar CSS, basado en clases. Despuéd de agreg
 * ***tailwind.js*** - Configuración de tailwind
 * ***tailwind.css*** - Este archivo se crea directamten so bre la carpeta ***dist***
 * ***package.json*** - Actualiza la referencia para agregar a tailwind dentro de la lista de componentes
+
+## Ruteo
+* **[Vue Router](https://router.vuejs.org/)** - Herramienta que permite el ruteo para Vue
+```
+npm i -s vue-router
+```
+- Para VUE solo hay una página y el contenido se va actualizando de forma dinámica a tráves del rute.
+- Para configurar el ruteo hay que crear un archivo ***router.js*** dentro de la carpeta ***src***
+- Para poder usar la libreria de ruteo, se usa la siguiente sentencia. ***Vue.use*** permite la incorporaciónd de componentes o plug in's.
+```
+Vue.use(NomobreComponente);
+```
+Nuevos elementos para el ruteo
+* ***router-view*** - Es la sección que será actualizada a travez de la ruta
+* ***router-link*** - Es el elemento que permite la navegación entre vistas
+```html 
+<router-view />
+<router-link to="/" />
+```

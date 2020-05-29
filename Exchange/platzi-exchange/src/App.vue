@@ -1,17 +1,19 @@
 <template>
-  <div id="app" class="bg-blue-400">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <main>
+    <px-header></px-header>
+    <router-view
+      class="container px-5 sm:px-20 px-20 flex justify-center"
+    ></router-view>
+  </main>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import pxHeader from "@/components/pxHeader";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    pxHeader
   }
 };
 </script>
