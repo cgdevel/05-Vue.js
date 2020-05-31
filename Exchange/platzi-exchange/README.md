@@ -10,6 +10,7 @@ Herramientas recomendadas para mejorar la experiencia
 * **[VS Code ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)**  - Ayuda a detectar errores de código
 * **[Prettier](https://prettier.io/)** - "Enchula" el código para sea más legible (Ctrl + K + D en Visual Studio)
 * **[Vue Dev Tools](https://github.com/vuejs/vue-devtools)** - Extensión para debbugear aplicaciones de VUE
+* **[Numeral.js](http://numeraljs.com/)** - Nos va a permitir el formato de los datos recuperados.
 
 ## Comandos básicos del VUE-CLI
 * Instalación del cliente de VUE para NODE
@@ -51,6 +52,8 @@ vue add @ianaya89/tailwind
 ##  Conceptos nuevos
 * ***Single File Component*** - Archivos con extensión .VUE. Son los componentes vistos de una forma separada.
 * ***Presets*** - Son las configuras guardadas al momento de generar un proyecto. Son reutilizables.
+* ***[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)*** - Funcionalidad que tienen los browsers para poder hacer cosultas HttpRequest.
+* ***Filtros*** - Son una utilidad de VUE que permite el formateo de la vista de una propiedad. Similar a los **pipes** de Angular.
 
 
 ## Tailwind CSS

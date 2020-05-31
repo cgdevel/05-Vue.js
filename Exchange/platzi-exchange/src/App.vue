@@ -8,14 +8,14 @@
 </template>
 
 <script>
-import pxHeader from "@/components/pxHeader";
+import pxHeader from '@/components/pxHeader'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     pxHeader
   }
-};
+}
 </script>
 
 <style>

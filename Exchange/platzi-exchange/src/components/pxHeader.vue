@@ -11,7 +11,13 @@
         <div
           class="hidden sm:block w-full block flex-grow lg:flex lg:items-center lg:w-auto"
         >
-          <div class="text-sm lg:flex-grow"></div>
+          <div class="text-sm lg:flex-grow">
+            <router-link
+              to="/about"
+              class="mt-5 text-xl text-green-600 hover:underline"
+              >Acerca de</router-link
+            >
+          </div>
         </div>
       </nav>
     </nav>
@@ -19,12 +25,12 @@
 </template>
 
 <script>
-import pxIcon from "@/components/pxIcon";
+import pxIcon from '@/components/pxIcon'
 
 export default {
-  name: "pxHeader",
+  name: 'pxHeader',
   components: {
     pxIcon
   }
-};
+}
 </script>
