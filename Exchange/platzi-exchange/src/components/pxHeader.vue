@@ -15,8 +15,17 @@
         >
           <div class="text-sm lg:flex-grow">
             <router-link
+              v-for="l in links"
+              :key="l.title"
+              :to="l.to"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              {{ l.title }}
+            </router-link>
+
+            <router-link
               to="/about"
-              class="mt-5 text-xl text-green-600 hover:underline"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
               >Acerca de</router-link
             >
           </div>
@@ -31,8 +40,16 @@ import pxIcon from '@/components/pxIcon'
 
 export default {
   name: 'pxHeader',
+
   components: {
     pxIcon
+  },
+
+  props: {
+    links: {
+      type: Array,
+      default: () => []
+    }
   }
 }
 </script>
