@@ -1,5 +1,6 @@
 # 05-Vue.js - Exchange 📈
 Ejercicio de Platzi para entender mejor el funcionamiento y la creación de un proyecto más profesional usando NODE y VUE
+[![Preview](https://pbs.twimg.com/media/EZcIwEkU0AAqjT6?format=jpg&name=large)](https://cgdevel-vue-exchange.netlify.app/)
 
 ## Componentes y herramientas 🛠
 * **[NODE.js](https://nodejs.org/es/)**
