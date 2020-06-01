@@ -12,6 +12,17 @@ Herramientas recomendadas para mejorar la experiencia
 * **[Vue Dev Tools](https://github.com/vuejs/vue-devtools)** - Extensión para debbugear aplicaciones de VUE
 * **[Numeral.js](http://numeraljs.com/)** - Nos va a permitir el formato de los datos recuperados.
 
+#### Componentes de terceros
+* **[Vue Spinners](https://github.com/Saeris/vue-spinners)** - Preloader
+```
+npm i -s @saeris/vue-spinners
+```
+* **[Chartkick](https://github.com/ankane/vue-chartkick)** - Herramienta para graficar
+```
+npm i -s vue-chartkick
+npm i -s chart.js
+```
+
 ## Comandos básicos del VUE-CLI
 * Instalación del cliente de VUE para NODE
 ```
@@ -80,4 +91,11 @@ Nuevos elementos para el ruteo
 ```html 
 <router-view />
 <router-link to="/" />
+```
+
+## Tips adicionales
+Para simplificar el código se pueden hacer las siguentes equivalencias en los componentes:
+```
+b-on:Evento(NombreFuncion)  ==> @Evento(NombreFuncion)
+b-bind:ElementoLinkeado     ==> :ElementoLinkeado
 ```
