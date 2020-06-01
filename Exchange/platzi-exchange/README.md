@@ -67,6 +67,7 @@ vue add @ianaya89/tailwind
 * ***[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)*** - Funcionalidad que tienen los browsers para poder hacer cosultas HttpRequest.
 * ***Filtros*** - Son una utilidad de VUE que permite el formateo de la vista de una propiedad. Similar a los **pipes** de Angular.
 * ***Promesas*** - ¿¿¿???
+* ***ECMAScript*** - ¿¿¿???
 
 
 ## Tailwind CSS
