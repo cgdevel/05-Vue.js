@@ -65,6 +65,7 @@ vue add @ianaya89/tailwind
 * ***Presets*** - Son las configuras guardadas al momento de generar un proyecto. Son reutilizables.
 * ***[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)*** - Funcionalidad que tienen los browsers para poder hacer cosultas HttpRequest.
 * ***Filtros*** - Son una utilidad de VUE que permite el formateo de la vista de una propiedad. Similar a los **pipes** de Angular.
+* ***Promesas*** - ¿¿¿???
 
 
 ## Tailwind CSS
@@ -98,4 +99,8 @@ Para simplificar el código se pueden hacer las siguentes equivalencias en los c
 ```
 b-on:Evento(NombreFuncion)  ==> @Evento(NombreFuncion)
 b-bind:ElementoLinkeado     ==> :ElementoLinkeado
+```
+Por default, Vue no puede detectar cambios a los elemento hechos de forma dínamica. Para esto, se ocupa la propiedad ***this.$set***
+```
+this.set(parametro-evaluado,'propiedad-editada', nuevo-valor)
 ```
